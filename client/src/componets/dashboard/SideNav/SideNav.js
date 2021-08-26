@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink, Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import "./SideNav.scss";
 
@@ -60,7 +61,7 @@ class SideNav extends Component {
           */}
           <div className="sign-out" onClick={this.onLogoutClick}>
             <li>
-              <i className="material-icons icon">arrow_back</i>Sign Out
+              <i className="material-icons icon"><ArrowBackIcon /></i>Sign Out
             </li>
           </div>
         </ul>
