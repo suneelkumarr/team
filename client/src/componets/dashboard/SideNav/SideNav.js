@@ -3,6 +3,7 @@ import { NavLink, Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import HomeIcon from '@material-ui/icons/Home';
 
 import "./SideNav.scss";
 
@@ -49,7 +50,7 @@ class SideNav extends Component {
           </li>
           <NavLink exact activeClassName="active-page" to="/dashboard">
             <li>
-              <i className="material-icons icon">home</i>Home
+              <i className="material-icons icon"><HomeIcon /></i>
             </li>
           </NavLink>
           {/*
